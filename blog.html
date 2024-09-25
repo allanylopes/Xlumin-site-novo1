@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/iconesite.ico">
+    <link rel="stylesheet" href="style.pags.css">
+    <title>XLUMINOUS</title>
+</head>
+    <body>
+        <!-- nav -->
+        <nav>
+            <div class="logo">
+        <!--verificar a possibilidade de logo no header-->
+            <a href="index.html"></a>
+            </div>
+                <ul>
+                    <li> <a href="./index.html"> Home </a> </li>
+                    <li> <a href="./blog.html"> Blog </a> </li>
+                    <li> <a href="./prod.html"> Produtos</a> </li>
+                    <li> <a href="./cad.html"> Cadastro </a> </li>
+                    <li> <a href="./cont.html"> Contato </a> </li>
+                </ul>
+        </nav>
+        <!-- end nav -->
+        
+    <!-- banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner__text">
+                <div class="line"></div>
+                <h1>Deficiência auditiva</h1>
+                <p>
+                <br>
+                    Segundo a Política Nacional de Educação Especial (1994, p. 14), a surdez é  a perda total ou parcial, congênita ou adquirida, da capacidade de compreender a fala através do ouvido. 
+                    Manifesta-se como:
+                <br>
+                    • Surdez leve/moderada: perda auditiva de até 70 decibéis,
+                    que dificulta, mas não impede o indivíduo de se expressar oralmente, bem como de perceber a voz humana, com ou sem a utilização de um aparelho auditivo.
+                <br>
+                    • Surdez severa/profunda: perda auditiva acima de 70 decibéis, que impede o individuo de entender, com ou sem aparelho auditivo, a voz humana, bem como de adquirir, naturalmente, o código da língua oral.
+                <br>
+                </p>
+                <div class="line"></div>
+                <!--
+                <button class="btn">View plans</button>
+                -->
+            </div>
+            <div class="banner__img">
+                <picture>
+                    <source media="(max-width:800px)" srcset="img/imagem01.jpg">
+                    <img src="img/imagem01.jpg">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <!-- end banner -->
+    <section class="diferent">
+        <div class="container">
+            <div class="line"></div>
+            <h2 class="h2">Brasil tem 10,7 milhões de deficientes auditivos, diz estudo</h2>
+            <div class="cards">
+                <!-- card item 0 -->
+                <div class="card-item">
+                    <p class="description">A deficiência auditiva é uma deficiência que se agrava com o passar dos anos. E como o Brasil está passando por um processo de envelhecimento da população, hoje já temos 59 milhões de brasileiros com mais de 50 anos e, em 2050, vamos chegar com mais de 98 milhões de brasileiros com mais de 50 anos de idade, essa é uma tendência que só vai crescer", disse Renato Meirelles, presidente do Instituto Locomotiva. </p>
+                </div>
+                <!-- card item 0 -->
+                <!-- card item 1 -->
+                <div class="card-item">
+                    <p class="description"> Completou que a "sociedade, claramente, não está preparada para isso. Nesse cenário de envelhecimento crescente da população brasileira, Meirelles destacou que oferecer condições de inclusão para os deficientes auditivos é cada vez mais importante, "porque o número dessas pessoas só vai crescer".</p>
+                </div>
+                <!-- card item 1 -->
+                <!-- card item 3 -->
+                <div class="card-item">
+                    <p class="description"> Dois em cada três brasileiros enfrentam dificuldades diárias, especialmente surdos, que têm menos acesso a oportunidades educacionais e de trabalho. Apenas 7% dos surdos têm ensino superior e 87% não usam aparelhos auditivos, devido ao alto custo e à falta de inclusão. Essa situação cria um ciclo de preconceito e limitações, dificultando seu progresso. Uma mulher surda relatou discriminação no trabalho, destacando a desconfiança em suas capacidades.</p>
+                </div>
+                <!-- card item 3 -->
+            </div>
+        </div>
+    </section>
+    <!-- end diferent -->
+    <!-- section find -->
+    <section class="find">
+        <div class="container">
+            <div class="find-background">
+                <h2 class="h2">DERDIC PUC-SP<br>Atua na educação de surdos e atendimento clínico de pessoas de todas as faixas etárias</h2>
+                <a href="https://www.pucsp.br/universidade/derdic#:~:text=O%20que%20%C3%A9%20a%20Derdic,de%20audi%C3%A7%C3%A3o%2C%20voz%20e%20linguagem." style="margin-left: auto;position: relative;z-index:9;" class="btn">Contato</a>
+                <img src="img/bg-pattern-how-we-work-desktop.svg" class="pattern-find" alt="">
+            </div>
+    </section>
+    <!-- end section find -->
+    <footer class="footer">
+        <footer class="container">
+            <!-- footer header -->
+            <div class="footer-header">
+                <div class="logo-footer">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="medias-socias">
+                    <img src="img/icon-facebook.svg" alt="">
+                    <img src="img/icon-twitter.svg" alt="">
+                    <img src="img/icon-instagram.svg" alt="">
+                </div>
+            </div>
+        </footer>
+            <!-- end footer header -->
+    <script>
+        // Menu mobile
+        const menuIcon = document.querySelector('.menu-icon');
+        const nav = document.querySelector('nav');
+        menuIcon.addEventListener('click', () => {
+            if (nav.classList.contains('open')) {
+                nav.classList.remove('open');
+                menuIcon.querySelector('img').src = 'images/icon-hamburger.svg';
+            } else {
+                nav.classList.add('open');
+                menuIcon.querySelector('img').src = 'images/icon-close.svg';
+            }
+        });
+    </script>
+</body>
+
+</html>

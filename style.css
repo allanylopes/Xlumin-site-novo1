@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --clr-white: #fff;
+    --clr-dark-blue: #253245;
+    --clr-light-gray: #a7abb1;
+    --clr-gray: hsl(212.73deg 12.94% 33.33% / 90%);
+    --clr-acquamarine: #1a7993;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--clr-dark-blue);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    text-wrap: balance;
+    overflow: hidden;
+}
+
+nav{
+    background-color: var(--clr-gray);
+    padding: 7px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    color: var(--clr-light-gray);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav li a:hover{
+    background-color: white;
+    color: black;
+}
+.banner{
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)) ,url('Test01.mp4');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.texto .titulo{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 600;
+}
+.texto .sub_titulo{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+}
+.texto .botoes{
+    margin-top: 30px;
+}
+.texto .botoes button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+.texto .botoes button.overlay{
+    background: var(--clr-acquamarine);
+    color: var(--clr-white);
+    animation: vibrar 0.5s ease-in-out infinite both;
+}
+
+.video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
